@@ -28,7 +28,7 @@ spec:
     containerBuildConfiguration:
       openShiftSecurityContextConstraint: container-build
     defaultNamespace:
-      autoProvision: true
+      autoProvision: false
       template: <username>-devspaces
     maxNumberOfWorkspacesPerUser: 3
     maxNumberOfRunningWorkspacesPerUser: 3
