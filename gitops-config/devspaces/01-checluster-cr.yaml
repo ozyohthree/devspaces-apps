@@ -23,8 +23,6 @@ spec:
     pluginRegistry: {}
   containerRegistry: {}
   devEnvironments:
-    workspacesPodAnnotations:
-      io.kubernetes.cri-o.Devices: /dev/fuse
     containerBuildConfiguration:
       openShiftSecurityContextConstraint: container-build
     defaultNamespace:
