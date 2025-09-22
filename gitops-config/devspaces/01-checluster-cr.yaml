@@ -16,10 +16,8 @@ spec:
     devWorkspace: {}
     devfileRegistry: {}
     imagePuller:
-      enable: true
-      spec: 
-        images: >-
-          registry.redhat.io/devspaces/udi-rhel9:3.23;registry.redhat.io/devspaces/idea-rhel9:3.23;registry.redhat.io/devspaces/code-rhel9:3.23
+      enable: false
+      spec: {}
     metrics:
       enable: true
     pluginRegistry: {}
