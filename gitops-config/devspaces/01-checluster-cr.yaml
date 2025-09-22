@@ -37,7 +37,7 @@ spec:
     security: {}
     startTimeoutSeconds: 300
     storage:
-      pvcStrategy: per-workspace
+      pvcStrategy: per-user
   gitServices: {}
   networking:
     auth:
