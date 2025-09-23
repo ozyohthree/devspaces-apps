@@ -20,7 +20,8 @@ spec:
       spec: {}
     metrics:
       enable: true
-    pluginRegistry: {}
+    pluginRegistry: 
+      openVSXURL: https://open-vsx.org
   containerRegistry: {}
   devEnvironments:
     workspacesPodAnnotations:
