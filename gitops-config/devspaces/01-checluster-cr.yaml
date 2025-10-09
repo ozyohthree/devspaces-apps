@@ -31,8 +31,8 @@ spec:
     defaultNamespace:
       autoProvision: true
       template: <username>-devspaces
-    maxNumberOfWorkspacesPerUser: 3
-    maxNumberOfRunningWorkspacesPerUser: 3
+    maxNumberOfWorkspacesPerUser: 15
+    maxNumberOfRunningWorkspacesPerUser: 5
     secondsOfInactivityBeforeIdling: 3600
     secondsOfRunBeforeIdling: -1
     security: {}
