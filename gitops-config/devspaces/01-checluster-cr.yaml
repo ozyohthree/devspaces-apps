@@ -27,7 +27,7 @@ spec:
     workspacesPodAnnotations:
       io.kubernetes.cri-o.Devices: /dev/fuse
     containerBuildConfiguration:
-      openShiftSecurityContextConstraint: container-build
+      openShiftSecurityContextConstraint: devspaces-scc-netbind
     defaultNamespace:
       autoProvision: true
       template: <username>-devspaces
