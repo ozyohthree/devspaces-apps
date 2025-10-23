@@ -21,10 +21,10 @@ spec:
     metrics:
       enable: true
     pluginRegistry: 
-      deployment:
-        containers:
-          - image: quay.io/ohthree/pluginregistry-rhel9:custom 
-      openVSXURL: ""
+      # deployment:
+      #   containers:
+      #     - image: quay.io/ohthree/pluginregistry-rhel9:custom 
+      openVSXURL: https://open-vsx.org
   containerRegistry: {}
   devEnvironments:
     workspacesPodAnnotations:
