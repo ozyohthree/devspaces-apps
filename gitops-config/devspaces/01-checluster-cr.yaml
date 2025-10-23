@@ -24,7 +24,7 @@ spec:
       # deployment:
       #   containers:
       #     - image: quay.io/ohthree/pluginregistry-rhel9:custom 
-      openVSXURL: https://open-vsx.org
+      openVSXURL: ''
   containerRegistry: {}
   devEnvironments:
     workspacesPodAnnotations:
