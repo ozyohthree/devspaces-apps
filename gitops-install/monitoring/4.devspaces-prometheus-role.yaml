@@ -1,0 +1,17 @@
+kind: Role
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: prometheus-k8s
+  namespace: openshift-devspaces 
+  # Create a Role and RoleBinding to allow Prometheus to view the metrics
+rules:
+  - verbs:
+      - get
+      - list
+      - watch
+    apiGroups:
+      - ''
+    resources:
+      - services
+      - endpoints
+      - pods
