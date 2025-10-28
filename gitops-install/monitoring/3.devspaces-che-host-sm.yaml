@@ -3,7 +3,8 @@ kind: ServiceMonitor
 metadata:
   name: che-host
   namespace: openshift-devspaces # Default OpenShift Dev Spaces namespace
-  # ServiceMonitor for detecting the OpenShift Dev Spaces JVM metrics Service.
+  annotations:
+    description: ServiceMonitor for detecting the OpenShift Dev Spaces JVM metrics Service.
 spec:
   endpoints:
     - interval: 10s 

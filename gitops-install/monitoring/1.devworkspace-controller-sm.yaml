@@ -2,8 +2,9 @@ apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:
   name: devworkspace-controller
-  namespace: openshift-devspaces # The OpenShift Dev Spaces namespace. The default is openshift-devspaces
-  # description: ServiceMonitor for detecting the Dev Workspace Operator metrics Service
+  namespace: openshift-devspaces # The OpenShift Dev Spaces namespace.
+  annotations:
+    description: ServiceMonitor for detecting the Dev Workspace Operator metrics Service.
 spec:
   endpoints:
     - bearerTokenFile: /var/run/secrets/kubernetes.io/serviceaccount/token

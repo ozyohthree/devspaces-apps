@@ -1,4 +1,12 @@
 apiVersion: v1
+kind: ConfigMap
+metadata:
+  labels:
+    console.openshift.io/dashboard: "true"
+  name: grafana-dashboard-devspaces-server
+  namespace: openshift-config-managed
+  annotations:
+    description: Grafana Dashboard definition for Dev Spaces Server JVM  
 data:
   devspaces-server-dashboard.json: |-
     {
@@ -3736,12 +3744,4 @@ data:
       },
       "version": 1
     }
-kind: ConfigMap
-metadata:
-  creationTimestamp: "2025-10-24T16:41:35Z"
-  labels:
-    console.openshift.io/dashboard: "true"
-  name: grafana-dashboard-devspaces-server
-  namespace: openshift-config-managed
-  resourceVersion: "4738739"
-  uid: 6116332e-b83a-49a9-902e-b8c2ef05e93e
+

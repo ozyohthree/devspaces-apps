@@ -1,4 +1,12 @@
 apiVersion: v1
+kind: ConfigMap
+metadata:
+  labels:
+    console.openshift.io/dashboard: "true"
+  name: grafana-dashboard-dwo
+  namespace: openshift-config-managed
+  annotations:
+    description: Grafana Dashboard definition for Dev Workspace Operator  
 data:
   dwo-dashboard.json: |-
     {
@@ -1476,12 +1484,4 @@ data:
         },
         "version": 1
     }
-kind: ConfigMap
-metadata:
-  creationTimestamp: "2025-10-07T17:33:49Z"
-  labels:
-    console.openshift.io/dashboard: "true"
-  name: grafana-dashboard-dwo
-  namespace: openshift-config-managed
-  resourceVersion: "2478754"
-  uid: 767a005a-9aa2-4756-b9ba-cf5e1494f5a2
+
