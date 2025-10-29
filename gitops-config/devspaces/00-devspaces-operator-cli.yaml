@@ -8,6 +8,7 @@ metadata:
   labels:
     kubernetes.io/metadata.name: openshift-devspaces
     argocd.argoproj.io/managed-by: openshift-gitops
+    openshift.io/cluster-monitoring: "true"
   name: openshift-devspaces
 ---
 # Create an OperatorGroup resource for the devspaces namespace
