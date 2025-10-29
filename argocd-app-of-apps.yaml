@@ -6,7 +6,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/ozyohthree/devspaces-apps.git
-    path: gitops-config/gitops-app 
+    path: gitops-config/gitops-apps 
     targetRevision: main
   destination:
     server: https://kubernetes.default.svc
