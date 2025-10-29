@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: che-app
+  name: devspaces-install-app
 spec:
   project: default
   source:

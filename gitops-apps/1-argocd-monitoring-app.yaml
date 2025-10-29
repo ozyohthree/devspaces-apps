@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: monitoring-app
+  name: devspaces-monitoring-app
 spec:
   project: default
   source:
