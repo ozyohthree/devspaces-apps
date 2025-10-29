@@ -27,7 +27,7 @@ oc apply -f gitops-install/devspaces-argo-app.yaml
 ## ADD Github OAuth Org
 1. Create new [Oauth App](https://github.com/settings/applications/new)
 2. Use: 
-  - Homepage URL: <OpenShift Dev Spaces URL>
+  - Homepage URL: <openshift_dev_spaces_url>
   - Authorization callback URL: https://<openshift_dev_spaces_url>/api/oauth/callback
 3. Create secret and apply secret
 
