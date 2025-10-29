@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: monitoring-app
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/ozyohthree/devspaces-apps.git
+    path: gitops-config/monitoring
+    targetRevision: main
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: openshift-gitops
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
