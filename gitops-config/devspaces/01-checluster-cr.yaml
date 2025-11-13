@@ -36,7 +36,7 @@ spec:
       template: <username>-devspaces
     maxNumberOfWorkspacesPerUser: 15
     maxNumberOfRunningWorkspacesPerUser: 5
-    secondsOfInactivityBeforeIdling: 60
+    secondsOfInactivityBeforeIdling: 300
     secondsOfRunBeforeIdling: -1
     security: {}
     startTimeoutSeconds: 300
