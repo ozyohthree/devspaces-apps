@@ -1,3 +1,5 @@
+# Before adding this give permissions to ArgoCD to openshift-devspaces
+# oc adm policy add-cluster-role-to-user cluster-admin system:serviceaccount:openshift-gitops:openshift-gitops-argocd-application-controller
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
