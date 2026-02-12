@@ -31,6 +31,7 @@ spec:
       io.kubernetes.cri-o.Devices: /dev/fuse
     containerBuildConfiguration:
       openShiftSecurityContextConstraint: devspaces-scc-netbind
+    disableContainerBuildCapabilities: false
     defaultNamespace:
       autoProvision: true
       template: <username>-devspaces

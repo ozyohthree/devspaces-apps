@@ -6,7 +6,7 @@
 
 [Openshift Documentation | Dev Spaces v3.23 ](https://docs.redhat.com/en/documentation/red_hat_openshift_dev_spaces/3.23/html-single/administration_guide/index#monitoring-the-dev-workspace-operator-proc_collecting-dev-workspace-operator-metrics-with-prometheus)
 
-1. Create [ServiceMonitor](./devspaces-controller-sm.yaml) for the Dev Workspace Operator Note default namespace is ```openshift-devspaces```
+1. Create [ServiceMonitor](./1-devworkspace-controller-sm.yaml) for the Dev Workspace Operator Note default namespace is ```openshift-devspaces```
 2. Apply label to Dev Spaces namespace for Prometheus to detect the ServiceMonitor  
    ```bash
    oc label namespace openshift-devspaces openshift.io/cluster-monitoring=true
